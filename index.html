@@ -1,0 +1,164 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <!-- displays site properly based on user's device -->
+
+    <link rel="icon" type="image/png" sizes="32x32" href="./images/favicon-32x32.png">
+    <link rel="stylesheet" href="./css/main.css">
+    <title>Frontend Mentor | Todo app</title>
+
+    <!-- Feel free to remove these styles or customise in your own stylesheet 👍 -->
+    <style>
+        .attribution {
+            font-size: 11px;
+            text-align: center;
+            margin-bottom: 2em;
+        }
+
+        .attribution a {
+            color: hsl(228, 45%, 44%);
+        }
+    </style>
+</head>
+<body>
+<header class="app-header">
+    <section class="header-bar container">
+        <h1 class="main-heading">
+            Todo
+        </h1>
+        <button class="btn btn-toggle">
+            <img src="./images/icon-sun.svg" id="icon" alt="">
+            <span class="visually-hidden">toggle theme</span>
+        </button>
+    </section>
+</header>
+
+<main class="container">
+    <div class="todoWrapper">
+        <form class="addTaskForm">
+            <span class="btn-status">&nbsp;</span>
+            <label for="todoItem">
+                <input type="text" autoComplete="off"
+                       id="todoItem" placeholder="Create a new todo..." required>
+            </label>
+        </form>
+        <ul class="todo-list">
+            <li class="todo-item done">
+                <button class="btn btn-status">
+                    <span class="visually-hidden">Task Status</span>
+                    &nbsp;
+                </button>
+                <p>task#1</p>
+                <button class="btn btn-remove">
+                    <span class="visually-hidden">Remove task</span>
+                    <img src="./images/icon-cross.svg" alt="">
+                </button>
+            </li>
+
+
+            <li class="todo-item">
+                <button class="btn btn-status">
+                    <span class="visually-hidden">Task Status</span>
+                    &nbsp;
+                </button>
+                <p>task#2</p>
+                <button class="btn btn-remove">
+                    <span class="visually-hidden">Remove task</span>
+                    <img src="./images/icon-cross.svg" alt="">
+                </button>
+            </li>
+
+
+            <li class="todo-item">
+                <button class="btn btn-status">
+                    <span class="visually-hidden">Task Status</span>
+                    &nbsp;
+                </button>
+                <p>task#3</p>
+                <button class="btn btn-remove">
+                    <span class="visually-hidden">Remove task</span>
+                    <img src="./images/icon-cross.svg" alt="">
+                </button>
+            </li>
+
+
+            <li class="todo-item">
+                <button class="btn btn-status">
+                    <span class="visually-hidden">Task Status</span>
+                    &nbsp;
+                </button>
+                <p>task#4</p>
+                <button class="btn btn-remove">
+                    <span class="visually-hidden">Remove task</span>
+                    <img src="./images/icon-cross.svg" alt="">
+                </button>
+            </li>
+        </ul>
+        <div class="actions-list">
+            <ul>
+                <li class="actions">
+                    <p class="remainingTasks">4 items left</p>
+                    <div>
+                        <button class="btn btn-action active" data-action="All" aria-pressed="true">
+                            <span class="visually-hidden">Show </span>
+                            <span>All</span>
+                            <span class="visually-hidden"> tasks</span>
+
+                        </button>
+                        <button class="btn btn-action" data-action="Active" aria-pressed="false">
+                            <span class="visually-hidden">Show </span>
+                            <span>Active</span>
+                            <span class="visually-hidden"> tasks</span>
+                        </button>
+                        <button class="btn btn-action" data-action="Completed" aria-pressed="false">
+                            <span class="visually-hidden">Show </span>
+                            <span>Completed</span>
+                            <span class="visually-hidden"> tasks</span>
+                        </button>
+                    </div>
+                    <button class="btn btn-action" data-action="Clear">
+                        Clear Completed
+                    </button>
+                </li>
+            </ul>
+        </div>
+
+        <div class="mobile-actions">
+            <button class="btn btn-action active" data-action="All" aria-pressed="true">
+                <span class="visually-hidden">Show </span>
+                <span>All</span>
+                <span class="visually-hidden"> tasks</span>
+
+            </button>
+            <button class="btn btn-action" data-action="Active" aria-pressed="false">
+                <span class="visually-hidden">Show </span>
+                <span>Active</span>
+                <span class="visually-hidden"> tasks</span>
+            </button>
+            <button class="btn btn-action" data-action="Completed" aria-pressed="false">
+                <span class="visually-hidden">Show </span>
+                <span>Completed</span>
+                <span class="visually-hidden"> tasks</span>
+            </button>
+        </div>
+
+        <small class="info">
+            Drag and drop to reorder list
+        </small>
+    </div>
+
+
+</main>
+
+
+<div class="attribution">
+    Challenge by <a href="https://www.frontendmentor.io?ref=challenge" target="_blank">Frontend Mentor</a>.
+    Coded by <a href="https://github.com/ayahabeeb98">Aya Habeeb</a>.
+</div>
+
+
+<script src="./js/main.js"></script>
+</body>
+</html>
